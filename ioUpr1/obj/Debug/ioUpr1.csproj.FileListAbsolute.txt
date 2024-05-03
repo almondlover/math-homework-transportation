@@ -1,0 +1,16 @@
+C:\Users\prote\source\repos\ioUpr1\ioUpr1\bin\Debug\ioUpr1.exe.config
+C:\Users\prote\source\repos\ioUpr1\ioUpr1\bin\Debug\ioUpr1.exe
+C:\Users\prote\source\repos\ioUpr1\ioUpr1\bin\Debug\ioUpr1.pdb
+C:\Users\prote\source\repos\ioUpr1\ioUpr1\obj\Debug\ioUpr1.csproj.AssemblyReference.cache
+C:\Users\prote\source\repos\ioUpr1\ioUpr1\obj\Debug\ioUpr1.csproj.SuggestedBindingRedirects.cache
+C:\Users\prote\source\repos\ioUpr1\ioUpr1\obj\Debug\ioUpr1.csproj.CoreCompileInputs.cache
+C:\Users\prote\source\repos\ioUpr1\ioUpr1\obj\Debug\ioUpr1.exe
+C:\Users\prote\source\repos\ioUpr1\ioUpr1\obj\Debug\ioUpr1.pdb
+F:\uni bruh\ioUpr1\ioUpr1\bin\Debug\ioUpr1.exe.config
+F:\uni bruh\ioUpr1\ioUpr1\bin\Debug\ioUpr1.exe
+F:\uni bruh\ioUpr1\ioUpr1\bin\Debug\ioUpr1.pdb
+F:\uni bruh\ioUpr1\ioUpr1\obj\Debug\ioUpr1.csproj.AssemblyReference.cache
+F:\uni bruh\ioUpr1\ioUpr1\obj\Debug\ioUpr1.csproj.SuggestedBindingRedirects.cache
+F:\uni bruh\ioUpr1\ioUpr1\obj\Debug\ioUpr1.csproj.CoreCompileInputs.cache
+F:\uni bruh\ioUpr1\ioUpr1\obj\Debug\ioUpr1.exe
+F:\uni bruh\ioUpr1\ioUpr1\obj\Debug\ioUpr1.pdb
