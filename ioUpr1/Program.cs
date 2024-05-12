@@ -96,19 +96,31 @@ namespace ioUpr1
 			{
                 minel[0] = int.MaxValue;
 
-                for (int i = 0; i < matrix.GetLength(0); i++)
+				int zeroedcol = demand.Count((e)=>e==0);
+				//find minimal cost 
+				foreach(var e in list2)
 				{
+					int i = e[1], j=e[2];
 					if (supply[i] == 0) continue;
-					int j, empty=0;
-					for (j = 0; j < matrix.GetLength(1); j++)
-					{
-						//dont skip if base 0
-						if (demand[j] == 0&&empty++<emptycol) continue;
-						//y save value tho??????
-						if (minel[0] > cmatrix[i, j]) minel = new int[] { cmatrix[i, j], i, j};
+					if (demand[j] == 0) {
+						if (zeroedcol<emptycol) continue;
+						zeroedcol++;
 					}
-					//if (minel[0] > cmatrix[i, j]) minel = new int[] { cmatrix[i, j], i, j };
+                    if (minel[0] > cmatrix[i, j]) minel = new int[] { cmatrix[i, j], i, j };
                 }
+    //            for (int i = 0; i < matrix.GetLength(0); i++)
+				//{
+				//	if (supply[i] == 0) continue;
+				//	int j, empty=0;
+				//	for (j = 0; j < matrix.GetLength(1); j++)
+				//	{
+				//		//dont skip if base 0
+				//		if (demand[j] == 0&&empty++<emptycol) continue;
+				//		//y save value tho??????
+				//		if (minel[0] > cmatrix[i, j]) minel = new int[] { cmatrix[i, j], i, j};
+				//	}
+				//	//if (minel[0] > cmatrix[i, j]) minel = new int[] { cmatrix[i, j], i, j };
+    //            }
                 var lower = Math.Min(supply[minel[1]], demand[minel[2]]);
                 matrix[minel[1], minel[2]] = lower;
                 
@@ -119,7 +131,7 @@ namespace ioUpr1
                 supply[minel[1]] -= lower;
                 demand[minel[2]] -= lower;
                 if (demand[minel[2]] == 0 && supply[minel[1]] != 0) emptycol++;
-                else emptyrow++;
+                //else emptyrow++;
 
             }
 
@@ -280,12 +292,12 @@ namespace ioUpr1
         }
 		static void Main(string[] args)
 		{
-			var supply = new int[] { 100, 90, 150 };
-			var demand = new int[] { 80, 110, 120, 30 };
-			var matrix = new int[3, 4];
-			var cmatrix = new int[,] { { 2, 3, 5, 0},
-										{ 4, 4, 6, 0},
-										{ 5, 1, 7, 0 } };
+			var supply = new int[] { 110, 70, 40 };
+			var demand = new int[] { 110, 60, 50 };
+			var matrix = new int[3, 3];
+			var cmatrix = new int[,] { { 4, 6, 3},
+										{ 1, 3, 2},
+										{ 0, 0, 0 } };
 			var marked = new bool[3, 4];
 			var full = new List<int[]>();
 			var empty = new List<int[]>();
